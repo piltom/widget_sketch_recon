@@ -8,7 +8,7 @@ import os
 dataset_df = pd.DataFrame()
 NUM_DISCR_ANGLES = 5 #number of possible discrete angles
 discrete_angles = np.linspace(-np.pi/2,np.pi/2, num=NUM_DISCR_ANGLES)
-folders = ['img/double_size/checkbox','img/double_size/pushbutton', 'img/double_size/input','img/double_size/radiobutton', 'img/double_size/roundimage', 'img/double_size/slider', 'img/double_size/sqimage', 'img/double_size/switch', 'img/double_size/text']
+folders = ['img/checkbox','img/pushbutton', 'img/input','img/radiobutton', 'img/roundimage', 'img/slider', 'img/sqimage', 'img/switch', 'img/text']
 for folder in folders:
     target_name=folder.split('/')[-1]
     for dirname, _, filenames in os.walk(folder):
